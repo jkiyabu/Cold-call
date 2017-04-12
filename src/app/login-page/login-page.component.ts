@@ -9,7 +9,17 @@ import {Router} from "@angular/router";
 export class LoginPageComponent {
 
   constructor(public afService: AF, private router: Router) {}
+
+  // var clientId = "820792854342-g4u8m82tgnqk3ebq7inhef0mibeq5p52.apps.googleusercontent.com";
+  // var apiKey = 'CfAnW4JEb7BGsYYujdu7SpRA';
+  // var scopes = "https://www.googleapis.com/auth/calendar.readonly";
+  // declare var gapi:any;
+
+
+
   login() {
+    // return this.proceedAuthentication()
+    //  .then(() => this.initializeGoogleCalendarAPI())git
 
 
     this.afService.loginWithGoogle().then((data) => {
