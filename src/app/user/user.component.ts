@@ -60,5 +60,8 @@ export class UserComponent implements OnInit {
       this.tableView = true;
     }
   }
+  showCalendar(){
+    this.router.navigate(['calendar']);
+  }
 
 }

@@ -5,7 +5,7 @@ import { UserComponent } from './user/user.component';
 import { CallDetailsComponent } from './call-details/call-details.component';
 import { EditCallComponent } from './edit-call/edit-call.component';
 import { LoginPageComponent } from './login-page/login-page.component';
-
+import { CalendarComponent } from './calendar/calendar.component';
 
 const appRoutes: Routes = [
   {
@@ -15,6 +15,10 @@ const appRoutes: Routes = [
   {
     path:'user/:id',
     component: UserComponent
+  },
+  {
+    path:'calendar',
+    component: CalendarComponent
   },
   {
     path: 'calls/:id',

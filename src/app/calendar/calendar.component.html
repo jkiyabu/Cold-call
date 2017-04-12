@@ -1,0 +1,15 @@
+<div class="panel panel-default">
+  <!-- <div class="panel-body" *ng-if="authenticationService.isAuthenticated">
+	<h4>Appointments available for {{authenticationService.userName}}:</h4> -->
+  <h3>Welcome to your calendar</h3>
+	<ul class="list-group">
+		<li class="list-group-item" *ngFor="let appointment of appointments">
+			{{appointment}}
+		</li>
+	</ul>
+	<button class="btn btn-default navbar-btn" (click)="refreshAppointments()">Refresh</button>
+<!-- </div>
+<div class="panel-body" *ng-if="!authenticationService.isAuthenticated">
+	<h4>Welcome to Angular2 feat. OAuth2</h4>
+</div> -->
+</div>

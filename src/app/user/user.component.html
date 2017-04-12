@@ -20,6 +20,9 @@
 <label (click)='toggleTableView()'><span class="tableViewIcon">&nbsp;&#8862;</span></label>
 <p>{{displayPoints}}</p>
 
+<button class="btn btn-primary" (click)="showCalendar()">Show Calendar</button>
+
+
 <div *ngIf="tableView">
   <table class="table table-striped table-hover">
     <thead>
@@ -57,7 +60,5 @@
     <p>{{call.location}} {{call.points}}</p>
     <p>{{call.date}}</p>
   </div>
-
-
 
 </div>
