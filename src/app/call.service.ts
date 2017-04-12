@@ -14,7 +14,6 @@ export class CallService {
 
     this.afService.af.auth.subscribe(
       (auth) => {
-
           this.userId = auth.uid;
       }
     );

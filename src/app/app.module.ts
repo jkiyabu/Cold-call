@@ -12,9 +12,11 @@ import { CallFilterPipe } from './call-filter.pipe';
 import { CallDetailsComponent } from './call-details/call-details.component';
 import { EditCallComponent } from './edit-call/edit-call.component';
 import { DatePipe } from './date.pipe';
-import {AF} from "./providers/af";
+import { AF } from "./providers/af";
 import { LoginPageComponent } from './login-page/login-page.component';
-
+// import { ChartsModule } from 'ng2-charts';
+// import { Chart } from 'Chart.js';
+// import { Chart } from '../../node_modules/chart.js/src/chart.js';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -34,8 +36,7 @@ export const firebaseConfig = {
     DatePipe,
     CallDetailsComponent,
     EditCallComponent,
-    LoginPageComponent,
-    //providers: [AFLoginPageComponent],
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,
@@ -43,8 +44,7 @@ export const firebaseConfig = {
     HttpModule,
     routing,
     AngularFireModule.initializeApp(firebaseConfig),
-    //RouterModule.forRoot(routes)
-
+    // ChartsModule
   ],
   providers: [AF],
   bootstrap: [AppComponent]
