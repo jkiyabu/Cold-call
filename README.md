@@ -21,6 +21,26 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
+## Setup firebase database
+
+* Create a database with firebase
+* Create a api-keys.ts file in app directory
+* In api-keys.ts place with your information:
+
+    export var masterFirebaseConfig = {
+
+      apiKey: "xxxx",
+
+      authDomain: "xxxx.firebaseapp.com",
+
+      databaseURL: "https://xxxx.firebaseio.com",
+
+      storageBucket: "xxxx.appspot.com",
+
+      messagingSenderId: "xxxx"
+
+    };
+
 ## Planning
 
 * Access a list of the cold calls I have made for my sales.
